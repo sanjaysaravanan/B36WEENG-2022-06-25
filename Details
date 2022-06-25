@@ -1,0 +1,97 @@
+Recap:
+
+  Last Session
+
+Topics:
+
+  overflow: (overflowX, overflowY)
+    > visible ---> default
+    > scroll ---> fix a scroll bar irrespective of overflow
+    > auto --> provide a scroll bar whenever needed
+    > hidden --> hides the overflowing content/child/children
+
+  display: flex ---> takes the control on how the children inside should work
+
+    flex-direction, can only be used when display: flex;
+
+    flex enables the use of properties like justify-content, align-items, flex-direction
+
+      justify-content:
+        start, center, end, --> aligns content 
+        space-between --> Aligns content with equiivalent space between elements
+        space-around --> Aligns content with equiivalent space around elements
+        space-evenly --> Aligns content with equiivalent space between elements including start and end spacing
+
+      flex-direction: row
+        justify-content --> aligns the contents horizontally
+        align-items --> aligns the content vertically
+
+      flex-direction: column
+        justify-content --> aligns the contents vertically
+        align-items --> aligns the content horizontally
+
+      flex-wrap:
+        wrap & nowrap
+      
+    child-item:
+      flex props
+      flex-grow, flex-shrink, flex-basis
+      
+  display: Grid
+    Grid like strucute with fixed number of columns
+
+    grid-template-columns: auto auto auto; // produces three columns
+    gap: 16px; // row-gap & column-gap to be 16px
+
+  Position ---> 
+    CSS Property which lets us to position a particuler element within the webpage
+    
+    with either doucment flow or independent of the document flow with help of top, left, right, bottom
+
+    > static  ---> default position
+      1. does not affect the normal flow of the document
+      2. space is created 
+      3. Also, is not affect by the top, left, right, bottom
+
+    > relative relative to its parent
+      1. Affects the normal flow of the document
+      2. Space created
+      3. Affected by top, left, right, bottom
+
+    > absolute
+      1. Removed from the normal, placed accroding to the closest positioned
+      2. No Space created
+      3. Affected by top, left, right, bottom
+
+    > fixed
+      1. Removed from the normal flow and placed relative the initial containing block
+      2. No space created
+      3. Not Affected by scrolling
+
+    > sticky
+      1. Created alogn with normal flow of the document
+      2. SPace created
+      3. is not affected by scrolling after reaching point of the top, left ...
+  
+  mesurements
+
+    different mesurement units ( absolute & relative ) in css
+
+    Absolute units: px - pixel, pt - point, pc - picas,
+    1px = 1/96th of an inch
+
+    1pt = point 1/72th of an inch
+
+    1pc = picas 12 * 1pt or 1/6th of inch
+
+    Relative Units: %, vh, vw, 
+      1% -> 1 percent of the parent
+      vw -> viewport width
+        1vw -> 1 % viewport width
+      vh -> viewport height
+        1vh -> 1 % viewport height
+
+      emphemeral units
+      em, rem ---> root em
+        1rem = fontsize of the root element ( Initial Containing Block )
+        1em = fontsize of the parent element

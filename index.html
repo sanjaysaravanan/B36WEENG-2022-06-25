@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+
+  <style>
+    /* Overflow */
+    /* .parent {
+      width: 500px;
+      height: 500px;
+      border: 1px solid;
+    }
+
+    .child {
+      width: 700px;
+      height: 400px;
+      background-color: aqua;
+    } */
+
+    /* visible default overflow value */
+    /* .prop-overflow-visible {
+      overflow: visible;
+    }
+
+    .prop-overflow-hidden {
+      overflow: hidden;
+    } */
+
+    /* scroll will make scroll bar ( irrespective of overflow ) to scroll the within  parent and the inside content */
+    /* .prop-overflow-scroll {
+      overflow: scroll;
+    } */
+
+    /* auto --> provide scroll bar only when is a overflow */
+    /* .prop-overflow-auto {
+      overflow: auto;
+    } */
+
+    /* Flex */
+    /* .parent {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 500px;
+      border: 1px solid;
+      flex-wrap: wrap;
+    }
+
+    .child {
+      height: 100px; 
+      width: 100px; 
+      margin: 16px; 
+      border: 2px solid;
+    }
+
+    .child:first-child {
+      flex-grow: 1;
+    } */
+
+    /* display: grid */
+    /* .parent {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 16px 32px;
+      border: 1px solid hotpink;
+    }
+
+    .child {
+      border: 2px solid;
+      height: 50px;
+      text-align: center;
+      font-size: 32px;
+    } */
+
+    /* Position Style */
+    .common-style {
+      height: 100px;
+      width: 100px;
+      border: 1px solid;
+    }
+
+    .parent {
+      height: 100%;
+      border: 1px solid;
+      margin: 30px;
+      position: relative;
+    }
+
+    .static-pos {
+      /* 
+        Default Position Property which,
+          1. places the Element in the normal documents flow
+          2. Takes a place in the normal document flow
+          3. top, left, bottom, right does not any effect
+      */
+      position: static;
+      background-color: lawngreen;
+      top: 100px;
+      left: 100px;
+    }
+
+
+    .relative-pos {
+      /* 
+        Relative Position Property which,
+          1. places the element in the normal flow provided no values for top, left...
+             if top left.. value are provided. it is postioned according to pos-values(top, left..) with respective immediate parent
+          2. Takes a space/place in the normal document flow
+          3. top, left, bottom, right does take effect in position
+      */
+      position: relative;
+      background-color: yellow;
+      top: 100px;
+      left: 100px;
+    }
+
+    .absolute-pos {
+      /* 
+        Absolute Position Property which,
+          1. removes the element from the normal flow provided and make it appear above normal
+             document
+             if top left.. values are provided. it is postioned according to pos-values(top, left..) with respective initial containing block ( provided it doesn't have a positioned parent )
+             if anyone of its parent contains a postion relative, then it will be palced according to the postioned ancester/parent
+
+          2. No space/place in the normal document flow
+          3. top, left, bottom, right does take effect in position
+      */
+      position: absolute;
+      background-color: blue;
+      top: 100px;
+      left: 100px;
+    }
+
+    .fixed-pos {  
+      /* 
+        Fixed Position Property which,
+          1. removed from normal flow of the document and placed according to top, left... values with respective to initial containing block html
+          2. No space/place in the normal document flow
+          3. top, left, bottom, right does take effect in position
+      */
+      position: fixed;
+      background-color: blue;
+      top: 100px;
+      left: 100px;
+    }
+
+    .sticky-pos {
+      /* 
+        sticky Position Property which,
+          1. goes along flow of the document and placed according to top, left... values with respective to initial containing block html
+          2. Space is created
+          3. top, left, bottom, right does take effect in position
+      */
+      position: sticky;
+      background-color: blue;
+      top: 20px;
+      left: 100px;
+    }
+
+    
+
+  </style>
+
+</head>
+<body style="height: 2000px;background-color: #bec5be;" >
+
+  <!-- <div class="parent prop-overflow-auto">
+    <div class="child">
+      <h1 style="padding-left: 500px; margin: 0" >Some Content</h1>
+    </div>
+  </div> -->
+
+  <!-- <div class="parent">
+    <div class="child">Text One Two Threre four five siox seven</div>
+    <div class="child" style="flex-shrink: 1;"></div>
+    <div class="child"></div>
+  </div> -->
+
+  <!-- <div class="parent">
+    <div class="child">Child 1</div>
+    <div class="child">Child 2</div>
+    <div class="child">Child 3</div>
+    <div class="child">Child 4</div>
+    <div class="child">Child 5</div>
+    <div class="child">Child 6</div>
+    <div class="child">Child 4</div>
+    <div class="child">Child 5</div>
+    <div class="child">Child 6</div>
+  </div> -->
+
+  <div class="parent">
+    <div class="common-style sticky-pos" style="display: inline-block;" ></div>
+    <div class="common-style" style="display: inline-block;" ></div>
+  </div>
+
+  
+
+
+
+</body>
+</html>

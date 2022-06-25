@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+  <style>
+
+    .common-style {
+      height: 100px;
+      width: 100px;
+    }
+
+    .parent {
+      height: 100%;
+      position: static;
+      margin: 200px;
+      
+    }
+
+    .static-pos {
+      position: static;
+      top: 100px;
+      left: 100px;
+      background-color: aliceblue;
+    }
+
+    .rel-pos {
+      position: relative;
+      top: 0px;
+      left: 10px;
+      background-color: blueviolet;
+    }
+
+    .abs-pos {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      background-color: blueviolet;
+    }
+
+    .fix-pos {
+      position: fixed;
+      top: 100px;
+      left: 100px;
+      background-color: green;
+    }
+
+    .sticky-pos {
+      position: sticky;
+      top: 100px;
+      left: 50px;
+      background-color: yellow;
+    }
+    
+  </style>
+</head>
+
+<body style="height: 2000px;background-color: honeydew;">
+  <div class="parent">
+    <div class="common-style sticky-pos"  ></div>
+  </div>
+
+</body>
+
+</html>

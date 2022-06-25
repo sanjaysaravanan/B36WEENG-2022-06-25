@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* .sample-div {
+      display: none;
+    } */
+
+    .flex-container {
+      display: flex;
+      /* flex-wrap: wrap; */
+      justify-content: space-around;
+      align-items: center;
+      /* align-content: flex-end; */
+      height: 100vh;
+    }
+
+    .flex-child {
+      width: 200px;
+      margin: 4px;
+      border: 3px solid;
+      background-color: green;
+    }
+
+    .flex-child-1 {
+      min-height: 100px;
+      flex-shrink: 0;
+    }
+
+    .flex-child-2 {
+      min-height: 200px;
+    }
+
+
+    .flex-child-3 {
+      min-height: 300px;
+    }
+    
+    .axis {
+        position: absolute;
+    }
+
+    .cross-axis {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 5px;
+        height: 100%;
+        background-color: blue;
+    }
+
+    .main-axis {
+        top: 50%;
+        transform: translateY(-50%);
+        height: 5px;
+        width: 100%;
+        background-color: red;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+  <!-- <div class="flex-container">
+    <div class="flex-child flex-child-1"></div>
+    <div class="flex-child flex-child-2"></div>
+    <div class="flex-child flex-child-3"></div>
+    <div class="axis main-axis"></div>
+    <div class="axis cross-axis"></div>
+  </div> -->
+  <div style="display: flex;" >
+    <div style="height: 100px; width: 100px; margin: 16px; border: 2px solid;" ></div>
+    <div style="height: 100px; width: 100px; margin: 16px; border: 2px solid;" ></div>
+    <div style="height: 100px; width: 100px; margin: 16px; border: 2px solid;" ></div>
+  </div>
+
+</body>
+</html>
